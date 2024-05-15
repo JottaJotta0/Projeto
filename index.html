@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h2>Fazer Login</h2>
+        </header>
+        <div class="item">
+            <label for="usuario">Usuário</label>
+            <input type="txtusuario" id="txtusuario" placeholder="Digite o nome de Usuário">
+            <div id="msgErroUsuario" style="color: red;"></div>
+        
+
+            <p>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu Email">
+                <div id="msgErroEmail" style="color: red;"></div>
+            </p>
+
+        
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+            <div id="msgErroSenha" style="color: red;"></div>
+
+            <button class="botao" onclick="clicar()">Logar</button>
+        </div>
+
+    </div>
+
+    
+    <div class="janela-modal" id="janela-modal">
+        <div class="modal">
+            <button class="fechar" id="fechar">X</button>
+            <h1>Escolha um vídeo</h1>
+            <p>
+                <a href="https://youtu.be/L7d6VdI8Cnk?si=DTzHYfOiWnOL1w4V" target="_blank">
+                    <button>Calculadora</button>
+                </a>
+
+                <a href="https://youtu.be/4CUa9R_N4eQ?si=Qw1bH5Ryh24Em4uy" target="_blank">
+                    <button>Lista</button>
+                </a>
+
+                <a href="https://youtu.be/W2KPdh4F4t8?si=DdunJhtscefwNUbt" target="_blank">
+                    <button>Personalizar VSCode</button>
+                </a>
+
+                <a href="https://youtu.be/GK0ok3ZCXwM?si=zeGaBrHBqqURArob" target="_blank">
+                    <button>Relógio Digital</button>
+                </a>
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

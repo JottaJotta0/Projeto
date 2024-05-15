@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    background-color: #1eddff;
+    padding: 20px;
+}
+
+.item{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.item label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.item input{
+    border: 2px solid #f0f0f0;
+    display: block;
+    border-radius: 14px;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+}
+
+.item button{
+    background-color: white;
+    border: 2px solid #03d9ff;
+    color: #000000;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 10px;
+    height: 50px;
+    padding: 10px;
+}
+
+.container{
+    background-color: #fafafa;
+    border-radius: 10px;
+    box-shadow: 6px 6px 6px #03d9ff;
+    width: 400px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.janela-modal{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: #00000080;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modal{
+    width: 60%;
+    min-width: 450px;
+    min-height: 200px;
+    background-color: #ffffff96;
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.fechar{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 0;
+    background-color: red;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.janela-modal.abrir{
+    display: flex;
+}
+
+@keyframes abrirmodal{
+    from{
+        opacity: 0;
+        transform: translate3d(0, -20px, -5px);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.abrir .modal{
+    animation: abrirmodal 0.5s;
+}
+
